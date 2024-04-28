@@ -51,10 +51,10 @@ def retrieve_database():
   
 if __name__ == "__main__":  
     guiWindow = tk.Tk()  
-    guiWindow.title("To-Do List Manager - ARSHAD")  
+    guiWindow.title("To-Do List Manager")  
     guiWindow.geometry("500x450+750+250")  
     guiWindow.resizable(0, 0)  
-    guiWindow.configure(bg = "#FAEBD7")  
+    guiWindow.configure(bg = "#10439F")  
   
     the_connection = sql.connect('listOfTasks.db')  
     the_cursor = the_connection.cursor()  
@@ -63,9 +63,9 @@ if __name__ == "__main__":
 
     tasks = []  
       
-    header_frame = tk.Frame(guiWindow, bg = "dark orange")  
-    functions_frame = tk.Frame(guiWindow, bg = "dark orange")  
-    listbox_frame = tk.Frame(guiWindow, bg = "dark orange")  
+    header_frame = tk.Frame(guiWindow, bg = "dark blue")  
+    functions_frame = tk.Frame(guiWindow, bg = "dark blue")  
+    listbox_frame = tk.Frame(guiWindow, bg = "dark blue")  
   
     header_frame.pack(fill = "both")  
     functions_frame.pack(side = "left", expand = True, fill = "both")  
@@ -75,8 +75,8 @@ if __name__ == "__main__":
         header_frame,  
         text = "To-Do List",  
         font = ("Alice", "30", "bold"),
-        background = "dark orange",  
-        foreground = "#FFFFFF"  
+        background = "dark blue",  
+        foreground = "#10439F"  
     )  
     header_label.pack(padx = 10, pady = 10)  
   
